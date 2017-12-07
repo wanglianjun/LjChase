@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="14dp"
+            android:textColor="#123123"
+            android:text="PeriscopeLayout是自定义控件添加点赞效果" />
+        <Button
+            android:id="@+id/dianzanBtn_periscope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_gravity="bottom"
+            android:paddingBottom="14dp"
+            android:background="#24d2d2c9"
+            android:text="点这里" />
+        <me.yifeiyuan.library.PeriscopeLayout
+        android:id="@+id/periscope"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:text="PeriscopeLayout画布"
+        android:background="#87d2d2c9" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+<!--LikeAnimation-->
+        <com.nooeyes.github.widget.LikeButtonView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/heart"
+            android:text="Hello World!" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/heart"
+            android:text="h"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:src="@drawable/heart"
+            android:text="hanks"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

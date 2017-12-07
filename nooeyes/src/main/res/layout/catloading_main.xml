@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="175dp"
+    android:layout_height="260dp"
+    android:background="@drawable/arontibo_background"
+    >
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:src="@drawable/catloading_mouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mouse"/>
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:src="@drawable/catloading_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cat"/>
+
+        <ImageView
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/catloading_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eye_left"/>
+
+        <com.nooeyes.github.catloading.EyelidView
+            android:layout_marginLeft="3.5dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/catloading_eyes"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:id="@+id/eyelid_left"/>
+
+        <ImageView
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/catloading_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eye_right"/>
+
+        <com.nooeyes.github.catloading.EyelidView
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="12.5dp"
+            android:src="@drawable/catloading_eyes"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:id="@+id/eyelid_right"/>
+    </RelativeLayout>
+
+    <com.nooeyes.github.catloading.GraduallyTextView
+        android:id="@+id/graduallyTextView"
+        android:layout_marginBottom="15dp"
+        android:textSize="15sp"
+        android:paddingBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="L O A D I N G ..."
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
